@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+  <html>
+    <body>
+      <article class="">
+
+      </article>
+
+      <input type="button" name="" value="fetch"
+      onclick="
+      /*
+      fetch('html').then(function(response){
+
+        response.text().then(function(text){
+
+          document.querySelector('article').innerHTML = text;
+
+        })//익명함수 끝
+
+      })//then  end
+    */
+
+      fetch('html').then(function(response){
+
+        if(response.status == '404'){
+            alert('not found')
+        }
+
+
+
+
+
+      });
+
+      console.log(1);
+      console.log(2);
+
+      ">
+      <!-- then : 서버가 클라이언트로 응답이 끝나면 ~한 일을 해달라고 미리 주문한것. -->
+
+    </body>
+  </html>

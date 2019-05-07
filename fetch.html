@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+    <body>
+      <article class="">
+
+      </article>
+
+      <input type="button" name="" value="fetch"
+      onclick="
+      fetch('html').then(function(response){
+
+        response.text().then(function(text){
+
+          document.querySelector('article').innerHTML = text;
+
+        })//익명함수 끝
+
+      })//then  end
+      /*
+      */
+      <!-- asynchronous -->
+
+      <!-- function callMeBack(){
+        console.log('response end');
+      }
+
+      callMeBack = function(){ console.log('response end2');
+      }
+
+
+      fetch('html').then(callMeBack);  -->
+      <!-- fetch를 통해 html 파일의 데이터를 가져오도록 했음
+        이후 다 가져온 뒤에는(then) callMeBack 함수를 시행하도록 선언
+
+        html파일 응답이 완료되기 전까지는 아래의 다른 코드들이 수행될 수 있음
+        => 비동기식
+
+      fetch('html').then(function(){
+        console.log('response');
+      });
+    -->
+
+      console.log(1);
+      console.log(2);
+
+      ">
+      <!-- then : 서버가 클라이언트로 응답이 끝나면 ~한 일을 해달라고 미리 주문한것. -->
+
+    </body>
+  </html>
